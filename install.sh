@@ -35,10 +35,10 @@ ln -sf $dotfiles_dir/dotfiles/.ssh_config ~/.ssh/config
 
 # Fonts
 mkdir -p ~/.fonts
-ln -s $dotfiles_dir/resources/fonts/PowerlineSymbols.otf ~/.fonts/PowerlineSymbols.otf
+ln -sf $dotfiles_dir/resources/fonts/PowerlineSymbols.otf ~/.fonts/PowerlineSymbols.otf
 mkdir -p ~/.config/fontconfig/conf.d
 fc-cache -f ~/.fonts
-ln -s $dotfiles_dir/resources/fonts/10-powerline-symbols.conf ~/.config/fontconfig/conf.d/10-powerline-symbols.conf
+ln -sf $dotfiles_dir/resources/fonts/10-powerline-symbols.conf ~/.config/fontconfig/conf.d/10-powerline-symbols.conf
 
 # Zsh as default shell
 sudo chsh -s $(which zsh)
