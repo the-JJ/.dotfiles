@@ -1,0 +1,51 @@
+ServerAliveInterval 60
+
+# Personal
+Host nightpod
+	HostName 192.168.0.14
+	User osmc
+	Port 3142
+
+# Linetech
+Host linetech
+	HostName 46.101.244.131
+	IdentityFile ~/.ssh/id_rsa
+
+# 3k
+Host tnt
+	HostName tnt.trikoder.net
+	ForwardAgent yes
+	User jjuricic
+	Port 2216
+
+Host test-kurir
+	HostName kurir.trikoder.net
+	ForwardAgent yes
+	User jjuricic
+	Port 2216
+
+Host test-ichkoche
+	HostName ichkoche.trikoder.net
+	ForwardAgent yes
+	User jjuricic
+	Port 2216
+
+Host bishop
+	HostName 192.168.1.36
+	ForwardAgent yes
+	User jjuricic
+
+Host deltabishop
+	HostName 192.168.1.37
+	ForwardAgent yes
+	User jjuricic
+
+# KO
+Host stripagent
+	HostName 208.113.181.67
+	User strip_agent
+
+Host nkrijeka
+	HostName nk-rijeka.hr
+	User nkrijeka
+

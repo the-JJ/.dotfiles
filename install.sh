@@ -25,11 +25,13 @@ dotfiles_dir=~/.dotfiles
 sudo rm -rf ~/.vim > /dev/null 2>&1
 sudo rm -f ~/.vimrc > /dev/null 2>&1
 sudo rm -f ~/.zshrc > /dev/null 2>&1
+sudo rm -f ~/.ssh/config > /dev/null 2>&1
 
 # Symlink
 ln -sf $dotfiles_dir/dotfiles/.vim ~/.vim
 ln -sf $dotfiles_dir/dotfiles/.vimrc ~/.vimrc
 ln -sf $dotfiles_dir/dotfiles/.zshrc ~/.zshrc
+ln -sf $dotfiles_dir/dotfiles/.ssh_config ~/.ssh/config
 
 # Fonts
 mkdir -p ~/.fonts
@@ -41,9 +43,10 @@ ln -s $dotfiles_dir/resources/fonts/10-powerline-symbols.conf ~/.config/fontconf
 # Zsh as default shell
 sudo chsh -s $(which zsh)
 
-# Git name
+# Git config
 git config --global user.name "Juraj Juričić"
 git config --global user.email juraj.juricic@gmail.com
+git config --global core.excludesfile '~/.gitignore_global'
 
 # Solarized
 git clone git://github.com/sigurdga/gnome-terminal-colors-solarized.git ~/.solarized
