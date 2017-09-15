@@ -6,6 +6,9 @@
 #
 #===============================================================================
 
+sudo add-apt-repository ppa:noobslab/themes
+sudo apt-get update
+
 sudo apt-get -y install python3
 sudo apt-get -y install zsh
 sudo apt-get -y install vim-gnome
@@ -13,6 +16,7 @@ sudo apt-get -y install curl
 sudo apt-get -y install python-pip
 sudo apt-get -y install tmux
 sudo apt-get -y install python-dev
+sudo apt-get -y install arc-theme
 sudo apt-get install dconf-cli
 
 # Oh my ZSH
@@ -47,6 +51,10 @@ sudo chsh -s $(which zsh)
 git config --global user.name "Juraj Juričić"
 git config --global user.email juraj.juricic@gmail.com
 git config --global core.excludesfile '~/.gitignore_global'
+
+# ARC theme
+# TODO
+# https://unix.stackexchange.com/questions/39698/install-gnome-shell-theme-without-gnome-tweak-tool
 
 # Solarized
 git clone git://github.com/sigurdga/gnome-terminal-colors-solarized.git ~/.solarized
