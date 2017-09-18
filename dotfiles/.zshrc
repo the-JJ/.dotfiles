@@ -83,6 +83,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+source ~/.aliasrc
+
+source $HOME/.zshrc.local
 
 eval `dircolors ~/.solarized/dircolors`
 

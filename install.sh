@@ -30,12 +30,16 @@ sudo rm -rf ~/.vim > /dev/null 2>&1
 sudo rm -f ~/.vimrc > /dev/null 2>&1
 sudo rm -f ~/.zshrc > /dev/null 2>&1
 sudo rm -f ~/.ssh/config > /dev/null 2>&1
+sudo rm -f ~/.aliasrc > /dev/null 2>&1
 
 # Symlink
 ln -sf $dotfiles_dir/dotfiles/.vim ~/.vim
 ln -sf $dotfiles_dir/dotfiles/.vimrc ~/.vimrc
 ln -sf $dotfiles_dir/dotfiles/.zshrc ~/.zshrc
 ln -sf $dotfiles_dir/dotfiles/.ssh_config ~/.ssh/config
+ln -sf $dotfiles_dir/dotfiles/.aliasrc ~/.aliasrc
+
+touch ~/.zshrc.local
 
 # Fonts
 mkdir -p ~/.fonts

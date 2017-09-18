@@ -6,6 +6,11 @@ Host nightpod
 	User osmc
 	Port 3142
 
+Host nightpod-remote
+	HostName nightpod.juricicjuraj.com
+	User osmc
+	Port 3142
+
 # Linetech
 Host linetech
 	HostName 46.101.244.131
