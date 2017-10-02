@@ -105,3 +105,7 @@ function up {
 # Random aliases
 alias cls='clear'
 
+# Scripts
+alias webdev='~/.scripts/webdev.sh'
+alias brightness='sudo su -c "echo 500 > /sys/class/backlight/intel_backlight/brightness"'
+

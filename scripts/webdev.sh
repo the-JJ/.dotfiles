@@ -1,0 +1,31 @@
+#!/bin/bash
+
+start() {
+	sudo systemctl start mysql
+	sudo systemctl start php5.6-fpm
+	sudo systemctl start php7.1-fpm
+	sudo systemctl start apache2
+	sudo systemctl start nginx
+}
+
+stop() {
+	sudo systemctl stop mysql
+	sudo systemctl stop php5.6-fpm
+	sudo systemctl stop php7.1-fpm
+	sudo systemctl stop apache2
+	sudo systemctl stop nginx
+}
+case "$1" in
+  start)
+	start
+	;;
+  stop)
+	stop
+	;;
+  *)
+	echo $"Usage: $0 {start|stop}"
+	exit 1
+esac
+
+exit 0
+

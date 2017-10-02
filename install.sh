@@ -31,6 +31,7 @@ sudo rm -f ~/.vimrc > /dev/null 2>&1
 sudo rm -f ~/.zshrc > /dev/null 2>&1
 sudo rm -f ~/.ssh/config > /dev/null 2>&1
 sudo rm -f ~/.aliasrc > /dev/null 2>&1
+sudo rm -f ~/.scripts > /dev/null 2>&1
 
 # Symlink
 ln -sf $dotfiles_dir/dotfiles/.vim ~/.vim
@@ -38,6 +39,7 @@ ln -sf $dotfiles_dir/dotfiles/.vimrc ~/.vimrc
 ln -sf $dotfiles_dir/dotfiles/.zshrc ~/.zshrc
 ln -sf $dotfiles_dir/dotfiles/.ssh_config ~/.ssh/config
 ln -sf $dotfiles_dir/dotfiles/.aliasrc ~/.aliasrc
+ln -sf $dotfiles_dir/scripts ~/.scripts
 
 touch ~/.zshrc.local
 
@@ -55,6 +57,7 @@ sudo chsh -s $(which zsh)
 git config --global user.name "Juraj Juričić"
 git config --global user.email juraj.juricic@gmail.com
 git config --global core.excludesfile '~/.gitignore_global'
+git config --global alias.trikoder 'config user.email "juraj.juricic@trikoder.net"'
 
 # ARC theme
 # TODO
