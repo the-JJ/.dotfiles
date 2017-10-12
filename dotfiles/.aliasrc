@@ -111,4 +111,4 @@ alias brightness='sudo su -c "echo 500 > /sys/class/backlight/intel_backlight/br
 
 # PHP aliases
 alias php:xdebug-off="sudo rm /etc/php/7.1/cli/conf.d/*xdebug.ini"
-alias php:xdebug="sudo sudo ln -s /etc/php/7.1/mods-available/xdebug.ini
+alias php:xdebug="sudo sudo ln -s /etc/php/7.1/mods-available/xdebug.ini"
