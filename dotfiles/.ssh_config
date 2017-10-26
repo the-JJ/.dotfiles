@@ -23,6 +23,12 @@ Host tnt
 	User jjuricic
 	Port 2216
 
+Host delta
+	HostName delta.trikoder.net
+	ForwardAgent yes
+	User jjuricic
+	Port 2216
+
 Host test-kurir
 	HostName kurir.trikoder.net
 	ForwardAgent yes
@@ -44,6 +50,20 @@ Host deltabishop
 	HostName 192.168.1.37
 	ForwardAgent yes
 	User jjuricic
+
+Host logger
+    HostName logger.trikoder.net
+    ForwardAgent yes
+    User jjuricic
+    Port 2216
+
+Host bladesoho
+    Hostname shell.gridhost.co.uk
+    User bladesoh
+
+Host bladesoho-api
+    Hostname shell.gridhost.co.uk
+    User apiblade
 
 # KO
 Host stripagent

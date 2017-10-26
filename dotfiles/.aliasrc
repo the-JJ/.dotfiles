@@ -104,6 +104,8 @@ function up {
 
 # Random aliases
 alias cls='clear'
+alias siesta='systemctl suspend'
+alias snooze='systemctl suspend'
 
 # Scripts
 alias webdev='~/.scripts/webdev.sh'
