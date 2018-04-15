@@ -2,7 +2,7 @@ ServerAliveInterval 60
 
 # Personal
 Host nightpod
-	HostName 192.168.0.14
+	HostName 192.168.8.14
 	User osmc
 	Port 3142
 
@@ -13,8 +13,18 @@ Host nightpod-remote
 
 # Linetech
 Host linetech
-	HostName 46.101.244.131
+	HostName 46.101.170.15
 	IdentityFile ~/.ssh/id_rsa
+
+Host sinisa
+    HostName sinisa.mining.linetech.hr
+    Port 2148
+    User root
+   
+Host ante
+    HostName ante.mining.linetech.hr
+    Port 2173
+    User root
 
 # 3k
 Host tnt
@@ -64,6 +74,10 @@ Host bladesoho
 Host bladesoho-api
     Hostname shell.gridhost.co.uk
     User apiblade
+
+Host bladesoho-stage
+    Hostname shell.gridhost.co.uk
+    User stagebla
 
 # KO
 Host stripagent
