@@ -8,7 +8,7 @@ dotfiles_dir=~/.dotfiles
 # To dump, use (example):
 # dconf dump /org/gnome/shell/extensions/system-monitor/ > dconf/system-monitor.conf
 
-cat $dotfiles_dir/dconf/* | dconf load /
+cat $dotfiles_dir/dconf/*.conf | dconf load /
 
 
 # Enable gnome shell extensions
