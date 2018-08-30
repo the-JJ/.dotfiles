@@ -39,6 +39,12 @@ Host delta
 	User jjuricic
 	Port 2216
 
+Host delta2
+	HostName delta2.trikoder.net
+	ForwardAgent yes
+	User jjuricic
+	Port 2216
+
 Host test-kurir
 	HostName kurir.trikoder.net
 	ForwardAgent yes
@@ -78,6 +84,14 @@ Host bladesoho-api
 Host bladesoho-stage
     Hostname shell.gridhost.co.uk
     User stagebla
+
+Host floki
+    Hostname 192.168.233.11
+    User brkonja
+
+Host laika
+    Hostname 192.168.1.27
+    User jjuricic
 
 # KO
 Host stripagent
