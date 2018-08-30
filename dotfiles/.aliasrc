@@ -120,4 +120,4 @@ alias php:xdebug="sudo sudo ln -s /etc/php/7.1/mods-available/xdebug.ini"
 alias gpf='git push --force'
 
 # Unset some aliases
-unalias apg # introduced by ubuntu plugin - I wanna be able to use APG(1) instead
+alias apg=true && unalias apg # introduced by ubuntu plugin - I wanna be able to use APG(1) instead
