@@ -119,5 +119,9 @@ alias php:xdebug="sudo sudo ln -s /etc/php/7.1/mods-available/xdebug.ini"
 # Manual git aliases
 alias gpf='git push --force'
 
+# Alternative tools
+alias ping='prettyping'
+alias lll="fzf --preview 'bat --color \"always\" {}'"
+
 # Unset some aliases
 alias apg=true && unalias apg # introduced by ubuntu plugin - I wanna be able to use APG(1) instead

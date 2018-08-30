@@ -22,6 +22,7 @@ sudo apt -y install python-dev
 sudo apt -y install arc-theme
 sudo apt -y install dconf-cli
 sudo apt -y install gir1.2-gtop-2.0 gir1.2-networkmanager-1.0  gir1.2-clutter-1.0 # For gnome shell system monitor
+sudo apt -y install htop
 
 # Gnome shell system monitor applet
 wget $(curl -s https://api.github.com/repos/paradoxxxzero/gnome-shell-system-monitor-applet/releases/latest | grep tarball_url | cut -d '"' -f 4) -O /tmp/gnome-shell-system-monitor.tar.gz
@@ -30,6 +31,18 @@ tar -xzf /tmp/gnome-shell-system-monitor.tar.gz -C /tmp/gnome-shell-system-monit
 cd /tmp/gnome-shell-system-monitor/*
 make install
 rm -rf /tmp/gnome-shell-system-monitor*
+
+# Pretty ping
+curl https://raw.githubusercontent.com/denilsonsa/prettyping/master/prettyping --output ~/bin/prettyping
+chmod +x ~/bin/prettyping
+
+# Fuzzy find
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install --all
+
+# diff-so-fancy
+curl -L https://raw.githubusercontent.com/so-fancy/diff-so-fancy/master/third_party/build_fatpack/diff-so-fancy --output ~/bin/diff-so-fancy
+chmod +x ~/bin/diff-so-fancy
 
 # Return to dotfiles install dir
 cd $dotfiles_dir

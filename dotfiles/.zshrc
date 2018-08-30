@@ -89,3 +89,5 @@ source $HOME/.zshrc.local
 
 eval `dircolors ~/.solarized/dircolors`
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
