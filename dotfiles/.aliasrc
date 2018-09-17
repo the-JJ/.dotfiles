@@ -117,7 +117,7 @@ alias php:xdebug-off="sudo rm /etc/php/7.1/cli/conf.d/*xdebug.ini"
 alias php:xdebug="sudo sudo ln -s /etc/php/7.1/mods-available/xdebug.ini"
 
 # Manual git aliases
-alias gpf='git push --force'
+alias gpf='git push --force-with-lease'
 
 # Alternative tools
 alias ping='prettyping'
