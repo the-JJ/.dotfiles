@@ -38,4 +38,3 @@ ln -sf $dotfiles_dir/resources/fonts/PowerlineSymbols.otf ~/.fonts/PowerlineSymb
 mkdir -p ~/.config/fontconfig/conf.d
 fc-cache -f ~/.fonts
 ln -sf $dotfiles_dir/resources/fonts/10-powerline-symbols.conf ~/.config/fontconfig/conf.d/10-powerline-symbols.conf
-

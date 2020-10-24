@@ -107,6 +107,7 @@ alias cls='clear'
 alias siesta='systemctl suspend'
 alias snooze='systemctl suspend'
 alias :q='exit'
+alias o='xdg-open'
 
 # Scripts
 alias webdev='~/.scripts/webdev.sh'

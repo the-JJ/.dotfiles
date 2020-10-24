@@ -1,98 +1,19 @@
 ServerAliveInterval 60
 
-# Personal
-Host nightpod
-	HostName 192.168.8.14
-	User osmc
-	Port 3142
-
-Host nightpod-remote
-	HostName nightpod.juricicjuraj.com
-	User osmc
-	Port 3142
-
 # Linetech
 Host linetech
-    User jj
-	HostName 46.101.170.15
-	IdentityFile ~/.ssh/id_rsa
+  User jj
+  HostName 46.101.170.15
+  IdentityFile ~/.ssh/id_rsa
 
-Host sinisa
-    HostName sinisa.mining.linetech.hr
-    Port 2148
-    User root
-   
-Host ante
-    HostName ante.mining.linetech.hr
-    Port 2173
-    User root
+Host sergio
+    HostName 209.97.136.137
+    IdentityFile ~/.ssh/id_ed25519
 
-# 3k
-Host tnt
-	HostName tnt.trikoder.net
-	ForwardAgent yes
-	User jjuricic
-	Port 2216
-
-Host delta
-	HostName delta.trikoder.net
-	ForwardAgent yes
-	User jjuricic
-	Port 2216
-
-Host delta2
-	HostName delta2.trikoder.net
-	ForwardAgent yes
-	User jjuricic
-	Port 2216
-
-Host test-kurir
-	HostName kurir.trikoder.net
-	ForwardAgent yes
-	User jjuricic
-	Port 2216
-
-Host test-ichkoche
-	HostName ichkoche.trikoder.net
-	ForwardAgent yes
-	User jjuricic
-	Port 2216
-
-Host bishop
-	HostName 192.168.1.36
-	ForwardAgent yes
-	User jjuricic
-
-Host deltabishop
-	HostName 192.168.1.37
-	ForwardAgent yes
-	User jjuricic
-
-Host logger
-    HostName logger.trikoder.net
-    ForwardAgent yes
-    User jjuricic
-    Port 2216
-
-Host bladesoho
-    Hostname shell.gridhost.co.uk
-    User bladesoh
-
-Host bladesoho-api
-    Hostname shell.gridhost.co.uk
-    User apiblade
-
-Host bladesoho-stage
-    Hostname shell.gridhost.co.uk
-    User stagebla
-
-Host floki
-    Hostname 192.168.233.11
-    User brkonja
-
-Host laika
-    Hostname 192.168.1.27
-    User jjuricic
+Host designhandbook-1
+    HostName 52.211.136.111
+    IdentityFile ~/.ssh/designhandbook-ec2.pem
+    User ec2-user
 
 # KO
 Host stripagent
@@ -103,3 +24,7 @@ Host nkrijeka
 	HostName nk-rijeka.hr
 	User nkrijeka
 
+# Home
+Host mediavault
+    HostName 192.168.0.42
+    User jj

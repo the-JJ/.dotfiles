@@ -13,4 +13,3 @@ cd $dotfiles_dir
 ./install/git.sh
 ./install/dconf.sh
 ./install/oh-my-zsh.sh
-

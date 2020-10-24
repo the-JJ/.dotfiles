@@ -44,6 +44,12 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 curl -L https://raw.githubusercontent.com/so-fancy/diff-so-fancy/master/third_party/build_fatpack/diff-so-fancy --output ~/bin/diff-so-fancy
 chmod +x ~/bin/diff-so-fancy
 
+# AWS-cli
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "/tmp/awscliv2.zip"
+cd /tmp
+unzip awscliv2.zip
+sudo ./aws/install
+rm /tmp/awscliv2.zip
+
 # Return to dotfiles install dir
 cd $dotfiles_dir
-
